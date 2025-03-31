@@ -6,33 +6,36 @@ public class Shipment {
     private final String customerEmail;
     private final String address;
     private boolean dispatched;
+    private boolean delivered;
 
-<span class="fc" id="L10">    public Shipment(int id, String trackingNumber, String customerEmail, String address) {</span>
-<span class="fc" id="L11">        this.id = id;</span>
-<span class="fc" id="L12">        this.trackingNumber = trackingNumber;</span>
-<span class="fc" id="L13">        this.customerEmail = customerEmail;</span>
-<span class="fc" id="L14">        this.address = address;</span>
-<span class="fc" id="L15">        this.dispatched = false;</span>
-<span class="fc" id="L16">    }</span>
+<span class="fc" id="L11">    public Shipment(int id, String trackingNumber, String customerEmail, String address) {</span>
+<span class="fc" id="L12">        this.id = id;</span>
+<span class="fc" id="L13">        this.trackingNumber = trackingNumber;</span>
+<span class="fc" id="L14">        this.customerEmail = customerEmail;</span>
+<span class="fc" id="L15">        this.address = address;</span>
+<span class="fc" id="L16">        this.dispatched = false;</span>
+<span class="fc" id="L17">        this.delivered =false;</span>
+
+<span class="fc" id="L19">    }</span>
 
     public String getTrackingNumber() {
-<span class="fc" id="L19">        return trackingNumber;</span>
+<span class="fc" id="L22">        return trackingNumber;</span>
     }
 
     public String getCustomerEmail() {
-<span class="fc" id="L23">        return customerEmail;</span>
+<span class="fc" id="L26">        return customerEmail;</span>
     }
 
     public boolean isDispatched() {
-<span class="fc" id="L27">        return dispatched;</span>
+<span class="fc" id="L30">        return dispatched;</span>
     }
 
     public void setDispatched(boolean dispatched) {
-<span class="fc" id="L31">        this.dispatched = dispatched;</span>
-<span class="fc" id="L32">    }</span>
+<span class="fc" id="L34">        this.dispatched = dispatched;</span>
+<span class="fc" id="L35">    }</span>
 
     public boolean hasValidAddress() {
-<span class="pc bpc" id="L35" title="1 of 4 branches missed.">        return address != null &amp;&amp; !address.trim().isEmpty();</span>
+<span class="pc bpc" id="L38" title="1 of 4 branches missed.">        return address != null &amp;&amp; !address.trim().isEmpty();</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
