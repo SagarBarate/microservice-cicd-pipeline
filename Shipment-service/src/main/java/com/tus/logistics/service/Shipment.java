@@ -6,6 +6,7 @@ public class Shipment {
     private final String customerEmail;
     private final String address;
     private boolean dispatched;
+    private boolean delivered;
 
     public Shipment(int id, String trackingNumber, String customerEmail, String address) {
         this.id = id;
@@ -13,6 +14,8 @@ public class Shipment {
         this.customerEmail = customerEmail;
         this.address = address;
         this.dispatched = false;
+        this.delivered =false;
+
     }
 
     public String getTrackingNumber() {
