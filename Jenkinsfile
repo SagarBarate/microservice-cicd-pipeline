@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/SagarBarate/microservice-cicd-pipeline.git/Shipment-service', branch: 'main'
+                git url: 'https://github.com/SagarBarate/microservice-cicd-pipeline.git/Shipment-service', branch: 'production'
             }
         }
         stage('Build') {
