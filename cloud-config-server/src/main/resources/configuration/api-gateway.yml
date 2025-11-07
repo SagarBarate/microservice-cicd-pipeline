@@ -1,0 +1,48 @@
+server:
+  port: 8222
+
+spring:
+ cloud:
+  gateway:
+   discovery:
+    locator:
+     enabled: true
+     lowerCaseServiceId: true
+   routes:
+    - id: doctors
+      uri: lb://DOCTOR-SERVICE
+      predicates:
+      - Path=/v1/doctor/**
+    - id: patients
+      uri: lb://PATIENT-SERVICE
+      predicates:
+      - Path=/v1/patient/**
+    - id: appointments
+      uri: lb://APPOINTMENT-SERVICE
+      predicates:
+      - Path=/v1/appointment/**
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://registry-server:8761/eureka/
+  instance:
+    hostname: api-gateway
+    prefer-ip-address: true
+# security:
+#  oauth2:
+#   client:
+#    registration:
+#     keycloak:
+#      provider: keycloak
+#      client-id: spring-gateway-cloud
+#      authorization-grant-type: authorization_code
+#      redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
+#    provider:
+#      keycloak:
+#       issuer-uri: http://localhost:8100/realms/My-Relam
+#   resourceserver:
+#    jwt:
+#     issuer-uri: http://localhost:8100/realms/My-Relam  

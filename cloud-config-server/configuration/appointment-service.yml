@@ -1,0 +1,19 @@
+server:
+ port: 8093
+ 
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:15432/postgres_docker_db?currentSchema=hsm-appointment
+    username: sagarbarateA00335597
+    password: sagar@123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      globally_quoted_identifiers: true
+      naming:
+         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect

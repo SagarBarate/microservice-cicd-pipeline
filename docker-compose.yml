@@ -1,0 +1,132 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres-hsm
+    environment:
+      POSTGRES_DB: postgres_docker_db
+      POSTGRES_USER: sagarbarateA00335597
+      POSTGRES_PASSWORD: sagar@123
+    ports:
+      - "15432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    command: >
+      postgres -c log_statement=all
+               -c log_destination=stderr
+               -c log_min_messages=info
+    networks:
+      - healthflow-net
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    networks:
+      - healthflow-net
+
+  config-server:
+    build: ./cloud-config-server
+    container_name: config-server
+    ports:
+      - "8888:8888"
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/actuator/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - healthflow-net
+
+  registry-server:
+    build: ./registry-server
+    container_name: registry-server
+    ports:
+      - "8761:8761"
+    depends_on:
+      - config-server
+    networks:
+      - healthflow-net
+
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "8222:8222"
+    depends_on:
+      - registry-server
+      - config-server
+    networks:
+      - healthflow-net
+
+  doctor-service:
+    build: ./doctor-service
+    container_name: doctor-service
+    ports:
+      - "8091:8091"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/postgres_docker_db
+      SPRING_DATASOURCE_USERNAME: sagarbarateA00335597
+      SPRING_DATASOURCE_PASSWORD: sagar@123
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - postgres
+      - registry-server
+      - config-server
+    restart: unless-stopped
+    networks:
+      - healthflow-net
+
+  patient-service:
+    build: ./patient-service
+    container_name: patient-service
+    ports:
+      - "8092:8092"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/postgres_docker_db
+      SPRING_DATASOURCE_USERNAME: sagarbarateA00335597
+      SPRING_DATASOURCE_PASSWORD: sagar@123
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - postgres
+      - registry-server
+      - config-server
+    restart: unless-stopped
+    networks:
+      - healthflow-net
+
+  appointment-service:
+    build: ./appointment-service
+    container_name: appointment-service
+    ports:
+      - "8093:8093"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/postgres_docker_db
+      SPRING_DATASOURCE_USERNAME: sagarbarateA00335597
+      SPRING_DATASOURCE_PASSWORD: sagar@123
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
+      SPRING_PROFILES_ACTIVE: docker
+    depends_on:
+      - postgres
+      - registry-server
+      - config-server
+    restart: unless-stopped
+    networks:
+      - healthflow-net
+
+volumes:
+  postgres_data:
+
+networks:
+  healthflow-net:
+    driver: bridge
