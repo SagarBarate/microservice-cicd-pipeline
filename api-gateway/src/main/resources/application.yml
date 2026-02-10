@@ -2,10 +2,31 @@ server:
   port: 8222
 
 spring:
- application:
-  name: api-gateway
- config:
-  import: optional:configserver:http://localhost:8888
+  application:
+    name: api-gateway
+  # Allow running without Config Server (local Eureka = localhost). Re-enable import in Docker via env.
+  cloud:
+    config:
+      import-check:
+        enabled: false
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      routes:
+        - id: doctors
+          uri: lb://DOCTOR-SERVICE
+          predicates:
+            - Path=/v1/doctor/**
+        - id: patients
+          uri: lb://PATIENT-SERVICE
+          predicates:
+            - Path=/v1/patient/**
+        - id: appointments
+          uri: lb://APPOINTMENT-SERVICE
+          predicates:
+            - Path=/v1/appointment/**
 
 eureka:
   client:

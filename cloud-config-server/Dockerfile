@@ -1,8 +1,11 @@
-# Use an official Maven image with OpenJDK 21 for building
-FROM maven AS build
+# Use Eclipse Temurin for building (openjdk image is deprecated on Docker Hub)
+FROM eclipse-temurin:21-jdk AS build
 
 # Set the working directory
 WORKDIR /app
+
+# Install Maven
+RUN apt-get update && apt-get install -y maven && rm -rf /var/lib/apt/lists/*
 
 # Copy the Maven project files
 COPY pom.xml .
@@ -11,8 +14,8 @@ COPY src ./src
 # Build the application
 RUN mvn clean package -DskipTests
 
-# Stage 2: Create the final image with OpenJDK 21
-FROM openjdk:21-jdk-slim
+# Stage 2: Create the final image
+FROM eclipse-temurin:21-jre
 
 # Set the working directory
 WORKDIR /app
