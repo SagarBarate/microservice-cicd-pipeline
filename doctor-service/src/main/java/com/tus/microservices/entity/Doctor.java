@@ -18,7 +18,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "doctors")
+@Table(name = "doctors", schema = "hsm_doctor")
 @Getter
 @Setter
 public class Doctor {

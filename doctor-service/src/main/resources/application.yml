@@ -2,27 +2,27 @@ server:
   port: 8091
 
 spring:
- application:
-  name: doctor-service
- cloud:
-  config:
-   enabled: false
-   uri: ""
- datasource:
-   url: jdbc:postgresql://localhost:15432/postgres_docker_db?currentSchema=hsm-doctor
-   username: sagarbarateA00335597
-   password: sagar@123
-   driver-class-name: org.postgresql.Driver
- jpa:
-   hibernate:
-     ddl-auto: update
-     globally_quoted_identifiers: true
-     naming:
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-   properties:
-     hibernate:
-       dialect: org.hibernate.dialect.PostgreSQLDialect
+  application:
+    name: doctor-service
+  cloud:
+    config:
+      enabled: false
+      uri: ""
+  flyway:
+    schemas: public
+  datasource:
+    url: jdbc:postgresql://localhost:15432/postgres_docker_db?currentSchema=hsm_doctor
+    username: sagarbarateA00335597
+    password: sagar@123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        default_schema: hsm_doctor
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 eureka:
   client:

@@ -47,3 +47,9 @@ Using generated security password: 224ce88a-ff8e-439b-aca7-00d0ae904bb1
 2026-02-10 00:06:06.795 [restartedMain] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8222 (http)
 2026-02-10 00:06:06.796 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8222
 2026-02-10 00:06:06.810 [restartedMain] INFO  com.tus.microservices.ApiGateway - Started ApiGateway in 1.236 seconds (process running for 1.452)
+2026-02-10 00:11:06.642 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:16:06.645 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:21:06.654 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:26:06.668 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:31:06.673 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:36:06.675 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

@@ -268,3 +268,10 @@ Caused by: java.net.UnknownHostException: Failed to resolve 'zipkin' [A(1), AAAA
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 Caused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOMAIN
 	at io.netty.resolver.dns.DnsResolveContext.onResponse(..)(Unknown Source)
+2026-02-10 00:07:34.809 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:12:34.813 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:17:34.814 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:22:34.823 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:27:34.829 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:32:34.834 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-02-10 00:37:34.836 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
