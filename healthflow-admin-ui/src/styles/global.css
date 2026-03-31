@@ -198,6 +198,66 @@ textarea {
   font-size: 12px;
 }
 
+.autocomplete-field .autocomplete-input-wrap {
+  position: relative;
+}
+
+.autocomplete-list {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: calc(100% + 4px);
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  max-height: 240px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.autocomplete-list li {
+  margin: 0;
+}
+
+.autocomplete-option {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  color: #0f172a;
+}
+
+.autocomplete-option:hover,
+.autocomplete-option:focus-visible {
+  background: #eff6ff;
+  outline: none;
+}
+
+.autocomplete-option-code {
+  font-size: 11px;
+  color: #64748b;
+  font-family: ui-monospace, monospace;
+  flex-shrink: 0;
+}
+
+.autocomplete-empty {
+  padding: 10px 12px;
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
 .table-wrap {
   background: #fff;
   border: 1px solid #e2e8f0;

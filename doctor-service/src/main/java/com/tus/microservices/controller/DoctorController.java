@@ -1,5 +1,7 @@
 package com.tus.microservices.controller;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -25,6 +27,7 @@ import org.springframework.web.context.request.WebRequest;
 
 import com.tus.microservices.model.DoctorRecord;
 import com.tus.microservices.model.Specialization;
+import com.tus.microservices.model.SpecializationOption;
 import com.tus.microservices.service.DoctorService;
 import com.tus.microservices.service.PatientClient;
 
@@ -85,8 +88,17 @@ public class DoctorController {
 			return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}
+
+	@GetMapping("/specializations")
+	public ResponseEntity<List<SpecializationOption>> getSpecializations() {
+		List<SpecializationOption> options = Arrays.stream(Specialization.values())
+				.map(SpecializationOption::from)
+				.sorted(Comparator.comparing(SpecializationOption::label, String.CASE_INSENSITIVE_ORDER))
+				.toList();
+		return ResponseEntity.ok(options);
+	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("/{id:\\d+}")
 	public ResponseEntity<DoctorRecord> getTutorialById(@PathVariable("id") Long id) {
 		log.info("get doctor by id:"+id);
 		if(id!=null)
@@ -99,7 +111,7 @@ public class DoctorController {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 	
-	@PutMapping("/{id}")
+	@PutMapping("/{id:\\d+}")
 	public ResponseEntity<DoctorRecord> updateTutorial(@PathVariable("id") Long id,@Valid @RequestBody DoctorRecord updateData) {
 		
 		DoctorRecord result;
@@ -117,7 +129,7 @@ public class DoctorController {
 	}
 	
 	
-	@DeleteMapping("/{id}")
+	@DeleteMapping("/{id:\\d+}")
 	public ResponseEntity<HttpStatus> deleteRecord(@PathVariable("id") Long id) {
 		if(id!=null)
 		{

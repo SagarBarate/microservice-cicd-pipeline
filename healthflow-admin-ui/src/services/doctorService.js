@@ -11,6 +11,11 @@ export async function getDoctorById(id) {
   return extractObject(response.data);
 }
 
+export async function getDoctorSpecializations() {
+  const response = await axiosClient.get("/v1/doctor/specializations");
+  return extractArray(response.data);
+}
+
 export async function createDoctor(payload) {
   const response = await axiosClient.post("/v1/doctor", payload);
   return extractObject(response.data);

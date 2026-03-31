@@ -3,9 +3,11 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import Alert from "../../components/common/Alert";
 import InputField from "../../components/common/InputField";
 import Loader from "../../components/common/Loader";
+import SpecializationAutocomplete from "../../components/common/SpecializationAutocomplete";
 import {
   createDoctor,
   getDoctorById,
+  getDoctorSpecializations,
   updateDoctor
 } from "../../services/doctorService";
 import { doctorFormModel } from "../../utils/formModels";
@@ -20,6 +22,29 @@ function DoctorFormPage() {
   const [alert, setAlert] = useState({ type: "", message: "" });
   const [loading, setLoading] = useState(isEdit);
   const [saving, setSaving] = useState(false);
+  const [specializationOptions, setSpecializationOptions] = useState([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    const loadSpecs = async () => {
+      try {
+        const list = await getDoctorSpecializations();
+        if (!cancelled) setSpecializationOptions(Array.isArray(list) ? list : []);
+      } catch (err) {
+        if (!cancelled) {
+          setSpecializationOptions([]);
+          setAlert({
+            type: "error",
+            message: getErrorMessage(err, "Could not load specialization list.")
+          });
+        }
+      }
+    };
+    loadSpecs();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   useEffect(() => {
     if (!isEdit) return;
@@ -44,7 +69,8 @@ function DoctorFormPage() {
   const validate = () => {
     const nextErrors = {};
     if (!form.name.trim()) nextErrors.name = "Name is required.";
-    if (!form.specialization.trim()) nextErrors.specialization = "Specialization is required.";
+    if (!String(form.specialization || "").trim())
+      nextErrors.specialization = "Specialization is required.";
     setErrors(nextErrors);
     return Object.keys(nextErrors).length === 0;
   };
@@ -87,13 +113,17 @@ function DoctorFormPage() {
           error={errors.name}
           required
         />
-        <InputField
+        <SpecializationAutocomplete
           label="Specialization"
           name="specialization"
           value={form.specialization}
-          onChange={(e) => setForm((prev) => ({ ...prev, specialization: e.target.value }))}
+          onChange={(code) =>
+            setForm((prev) => ({ ...prev, specialization: code }))
+          }
+          options={specializationOptions}
           error={errors.specialization}
           required
+          disabled={specializationOptions.length === 0}
         />
         <InputField
           label="Email"
