@@ -11915,3 +11915,8 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 2026-03-31 23:39:05.308 [http-nio-8093-exec-7] INFO  c.t.m.c.AppointmentController - Booking appointment for doctor 1
+2026-03-31 23:42:17.278 [http-nio-8093-exec-9] INFO  c.t.m.c.AppointmentController - appointment logs
+2026-03-31 23:42:17.296 [http-nio-8093-exec-10] INFO  c.t.m.c.AppointmentController - appointment logs
+2026-03-31 23:42:42.920 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:47:42.926 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:52:42.933 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

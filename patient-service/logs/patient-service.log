@@ -2157,3 +2157,7 @@ Caused by: java.net.ConnectException: Connection refused
 2026-03-31 23:34:57.780 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
 2026-03-31 23:39:05.423 [http-nio-8092-exec-10] INFO  c.t.m.controller.PatientController - Create patient
 2026-03-31 23:39:25.831 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:42:17.277 [http-nio-8092-exec-2] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 23:42:17.291 [http-nio-8092-exec-5] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 23:44:25.836 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:49:25.842 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

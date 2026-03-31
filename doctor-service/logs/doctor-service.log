@@ -1233,3 +1233,64 @@ Caused by: java.net.ConnectException: Connection refused
 2026-03-31 23:39:40.455 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctor by id:1
 2026-03-31 23:39:54.526 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctors list
 2026-03-31 23:39:54.556 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:41:46.739 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:41:46.758 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:41:49.649 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctor by id:2
+2026-03-31 23:41:49.659 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctor by id:2
+2026-03-31 23:41:52.815 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:41:52.821 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:41:57.361 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:01.209 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:06.694 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:06.709 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:09.327 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:09.346 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:12.408 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:42:12.423 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:42:16.579 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:16.592 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:17.276 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - Doctor logs
+2026-03-31 23:42:17.290 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - Doctor logs
+2026-03-31 23:42:20.302 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:20.323 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:21.540 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:21.554 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:35.187 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:35.200 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:42.731 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:42.744 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:43.460 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:43.480 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:49.369 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:42:49.380 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:44:39.428 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:45:54.383 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:45:54.407 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:45:57.622 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:45:57.647 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:46:00.096 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:46:00.110 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:46:02.320 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:46:02.330 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:47:51.022 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:47:51.042 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:47:52.892 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:47:52.908 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:47:56.679 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:47:56.690 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:47:57.657 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:47:57.674 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:47:59.821 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:48:01.155 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:48:01.166 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:48:13.795 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:48:13.832 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:48:38.166 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:48:38.188 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:48:39.304 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:48:39.312 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:48:41.276 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:48:41.295 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:49:39.439 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:53:32.014 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:53:32.040 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
