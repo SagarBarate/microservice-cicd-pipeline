@@ -1514,3 +1514,646 @@ Caused by: java.net.ConnectException: Connection refused
 2026-03-31 22:40:53.917 [http-nio-8092-exec-5] INFO  c.t.m.controller.PatientController - Patient logs
 2026-03-31 22:41:23.238 [http-nio-8092-exec-2] INFO  c.t.m.controller.PatientController - Patient logs
 2026-03-31 22:41:23.248 [http-nio-8092-exec-3] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 22:43:50.892 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:48:50.897 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:53:50.907 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:58:50.916 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:03:50.915 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:08:50.921 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:13:50.934 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:18:50.940 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:23:50.945 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:28:50.949 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:30:34.322 [http-nio-8092-exec-5] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 23:30:34.335 [http-nio-8092-exec-8] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 23:32:09.244 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 11 class path changes (0 additions, 11 deletions, 0 modifications)
+2026-03-31 23:32:09.250 [Thread-1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-03-31 23:32:09.251 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996329251, current=DOWN, previous=UP]
+2026-03-31 23:32:09.251 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:32:09.282 [Thread-1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 23:32:09.284 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:32:09.286 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 23:32:09.286 [Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:32:09.287 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:32:09.302 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:32:09.306 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-31 23:32:09.309 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-31 23:32:09.811 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-03-31 23:32:12.814 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-03-31 23:32:12.817 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - deregister  status: 200
+2026-03-31 23:32:12.817 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-03-31 23:32:12.977 [restartedMain] INFO  c.t.m.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.8 with PID 12688 (/Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service/target/classes started by sagargopalbarate in /Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service)
+2026-03-31 23:32:12.977 [restartedMain] INFO  c.t.m.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 23:32:12.979 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:32:12.980 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:32:12.980 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@6691a76f uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:32:12.980 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:32:12.980 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:32:12.980 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@6a5b3a4a uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:32:12.980 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:32:12.980 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:32:12.980 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@5ec95c7f uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:32:13.206 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 23:32:13.211 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-03-31 23:32:13.265 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6b7a8b66-1da3-3931-acd0-c93443a2ec93
+2026-03-31 23:32:13.354 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+2026-03-31 23:32:13.355 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:32:13.355 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 23:32:13.355 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-31 23:32:13.364 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-31 23:32:13.364 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 383 ms
+2026-03-31 23:32:13.458 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-03-31 23:32:13.469 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@4f9f4645
+2026-03-31 23:32:13.469 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-03-31 23:32:13.483 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-31 23:32:13.484 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-31 23:32:13.489 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 23:32:13.494 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-31 23:32:13.496 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 13.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 23:32:13.514 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 23:32:13.531 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:32:13.628 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 23:32:13.835 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-03-31 23:32:13.848 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-03-31 23:32:13.869 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31 23:32:13.879 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-03-31 23:32:13.896 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-03-31 23:32:13.897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-03-31 23:32:13.897 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:32:13.897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-03-31 23:32:13.897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-03-31 23:32:13.897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-03-31 23:32:13.897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-03-31 23:32:13.897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-03-31 23:32:13.897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-03-31 23:32:13.897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-03-31 23:32:13.913 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-03-31 23:32:13.913 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-03-31 23:32:13.913 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-31 23:32:13.914 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1774996333914 with initial instances count: 5
+2026-03-31 23:32:13.916 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-03-31 23:32:13.916 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996333916, current=UP, previous=STARTING]
+2026-03-31 23:32:13.916 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:32:13.917 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:32:13.918 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+2026-03-31 23:32:13.919 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+2026-03-31 23:32:13.921 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:32:13.927 [restartedMain] INFO  c.t.m.PatientServiceApplication - Started PatientServiceApplication in 1.043 seconds (process running for 3205.588)
+2026-03-31 23:32:13.930 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-31 23:32:15.252 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 12 class path changes (12 additions, 0 deletions, 0 modifications)
+2026-03-31 23:32:15.261 [Thread-18] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-03-31 23:32:15.261 [Thread-18] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996335261, current=DOWN, previous=UP]
+2026-03-31 23:32:15.262 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:32:15.267 [Thread-18] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 23:32:15.268 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:32:15.270 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 23:32:15.271 [Thread-18] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:32:15.279 [Thread-18] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:32:15.281 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-03-31 23:32:15.286 [Thread-18] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-03-31 23:32:15.289 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:32:16.290 [Thread-18] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-03-31 23:32:19.295 [Thread-18] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-03-31 23:32:19.298 [Thread-18] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - deregister  status: 200
+2026-03-31 23:32:19.298 [Thread-18] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-03-31 23:32:19.359 [restartedMain] INFO  c.t.m.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.8 with PID 12688 (/Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service/target/classes started by sagargopalbarate in /Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service)
+2026-03-31 23:32:19.359 [restartedMain] INFO  c.t.m.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 23:32:19.360 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:32:19.360 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:32:19.360 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@3ef09263 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:32:19.360 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:32:19.360 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:32:19.360 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@73e8762 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:32:19.360 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:32:19.360 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:32:19.360 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@3b5bc0a0 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:32:19.466 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 23:32:19.469 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-03-31 23:32:19.501 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6b7a8b66-1da3-3931-acd0-c93443a2ec93
+2026-03-31 23:32:19.555 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+2026-03-31 23:32:19.556 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:32:19.556 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 23:32:19.556 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-31 23:32:19.563 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-31 23:32:19.563 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 203 ms
+2026-03-31 23:32:19.625 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-03-31 23:32:19.633 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@48285225
+2026-03-31 23:32:19.633 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-03-31 23:32:19.642 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-31 23:32:19.642 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-31 23:32:19.645 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 23:32:19.650 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-31 23:32:19.651 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 13.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 23:32:19.664 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 23:32:19.674 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:32:19.737 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 23:32:19.881 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-03-31 23:32:19.890 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-03-31 23:32:19.904 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31 23:32:19.910 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-03-31 23:32:19.922 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-03-31 23:32:19.923 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-03-31 23:32:19.923 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:32:19.923 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-03-31 23:32:19.923 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-03-31 23:32:19.923 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-03-31 23:32:19.923 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-03-31 23:32:19.923 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-03-31 23:32:19.923 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-03-31 23:32:19.923 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-03-31 23:32:19.934 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-03-31 23:32:19.934 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-03-31 23:32:19.935 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-31 23:32:19.935 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1774996339935 with initial instances count: 5
+2026-03-31 23:32:19.937 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-03-31 23:32:19.938 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996339938, current=UP, previous=STARTING]
+2026-03-31 23:32:19.938 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:32:19.939 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:32:19.939 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+2026-03-31 23:32:19.939 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+2026-03-31 23:32:19.943 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:32:19.946 [restartedMain] INFO  c.t.m.PatientServiceApplication - Started PatientServiceApplication in 0.611 seconds (process running for 3211.608)
+2026-03-31 23:32:19.947 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-31 23:33:01.644 [http-nio-8092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 23:33:01.648 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 23:33:01.667 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2026-03-31 23:33:01.677 [http-nio-8092-exec-1] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 23:33:02.119 [http-nio-8092-exec-2] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 23:33:02.791 [http-nio-8092-exec-3] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 23:33:51.001 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2026-03-31 23:33:51.002 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Dropped 1 spans due to WebClientRequestException(Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411)
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST http://localhost:9411/api/v2/spans [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:318)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:174)
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:479)
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:443)
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:593)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:576)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:522)
+		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:261)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:326)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:342)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104)
+		at reactor.core.publisher.Mono.block(Mono.java:1779)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinWebClientSender.postSpans(ZipkinWebClientSender.java:58)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41)
+		at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123)
+		at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+		at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-31 23:33:55.433 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 12 class path changes (0 additions, 0 deletions, 12 modifications)
+2026-03-31 23:33:55.436 [Thread-34] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-03-31 23:33:55.436 [Thread-34] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996435436, current=DOWN, previous=UP]
+2026-03-31 23:33:55.436 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:33:55.440 [Thread-34] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 23:33:55.442 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:33:55.444 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 23:33:55.444 [Thread-34] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:33:55.459 [Thread-34] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:33:55.463 [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-03-31 23:33:55.464 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:33:55.465 [Thread-34] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-03-31 23:33:56.020 [Thread-34] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-03-31 23:33:59.022 [Thread-34] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-03-31 23:33:59.033 [Thread-34] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - deregister  status: 200
+2026-03-31 23:33:59.034 [Thread-34] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-03-31 23:33:59.111 [restartedMain] INFO  c.t.m.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.8 with PID 12688 (/Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service/target/classes started by sagargopalbarate in /Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service)
+2026-03-31 23:33:59.111 [restartedMain] INFO  c.t.m.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 23:33:59.111 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:33:59.111 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:33:59.111 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@4482d2a6 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:33:59.111 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:33:59.111 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:33:59.111 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@2c8f2bee uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:33:59.112 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:33:59.112 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:33:59.112 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@779f930a uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:33:59.211 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 23:33:59.214 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-03-31 23:33:59.247 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6b7a8b66-1da3-3931-acd0-c93443a2ec93
+2026-03-31 23:33:59.300 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+2026-03-31 23:33:59.300 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:33:59.300 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 23:33:59.300 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-31 23:33:59.308 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-31 23:33:59.308 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 196 ms
+2026-03-31 23:33:59.366 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-03-31 23:33:59.381 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection org.postgresql.jdbc.PgConnection@41543a9c
+2026-03-31 23:33:59.381 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-03-31 23:33:59.389 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-31 23:33:59.390 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-31 23:33:59.393 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 23:33:59.399 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-31 23:33:59.399 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 13.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 23:33:59.412 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 23:33:59.421 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:33:59.478 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 23:33:59.605 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-03-31 23:33:59.613 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-03-31 23:33:59.627 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31 23:33:59.633 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-03-31 23:33:59.645 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-03-31 23:33:59.646 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-03-31 23:33:59.646 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:33:59.647 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-03-31 23:33:59.647 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-03-31 23:33:59.647 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-03-31 23:33:59.647 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-03-31 23:33:59.647 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-03-31 23:33:59.647 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-03-31 23:33:59.647 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-03-31 23:33:59.656 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-03-31 23:33:59.656 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-03-31 23:33:59.656 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-31 23:33:59.656 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1774996439656 with initial instances count: 4
+2026-03-31 23:33:59.658 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-03-31 23:33:59.658 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996439658, current=UP, previous=STARTING]
+2026-03-31 23:33:59.658 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:33:59.659 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:33:59.659 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+2026-03-31 23:33:59.660 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+2026-03-31 23:33:59.662 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:33:59.666 [restartedMain] INFO  c.t.m.PatientServiceApplication - Started PatientServiceApplication in 0.58 seconds (process running for 3311.331)
+2026-03-31 23:33:59.667 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-31 23:34:07.571 [http-nio-8092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 23:34:07.571 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 23:34:07.573 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-31 23:34:15.134 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 12 class path changes (0 additions, 12 deletions, 0 modifications)
+2026-03-31 23:34:15.139 [Thread-50] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-03-31 23:34:15.140 [Thread-50] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996455139, current=DOWN, previous=UP]
+2026-03-31 23:34:15.140 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:34:15.147 [Thread-50] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 23:34:15.149 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:34:15.154 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:34:15.154 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 23:34:15.155 [Thread-50] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:34:15.161 [Thread-50] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:34:15.163 [Thread-50] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-03-31 23:34:15.164 [Thread-50] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-03-31 23:34:16.173 [Thread-50] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-03-31 23:34:19.179 [Thread-50] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-03-31 23:34:19.182 [Thread-50] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - deregister  status: 200
+2026-03-31 23:34:19.182 [Thread-50] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-03-31 23:34:19.293 [restartedMain] INFO  c.t.m.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.8 with PID 12688 (/Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service/target/classes started by sagargopalbarate in /Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service)
+2026-03-31 23:34:19.293 [restartedMain] INFO  c.t.m.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 23:34:19.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:34:19.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:34:19.293 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@7a2c5f01 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:34:19.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:34:19.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:34:19.293 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@47de0bdf uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:34:19.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:34:19.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:34:19.293 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@d27f709 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:34:19.401 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 23:34:19.405 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-03-31 23:34:19.438 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6b7a8b66-1da3-3931-acd0-c93443a2ec93
+2026-03-31 23:34:19.491 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+2026-03-31 23:34:19.491 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:34:19.491 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 23:34:19.491 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-31 23:34:19.501 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-31 23:34:19.501 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 207 ms
+2026-03-31 23:34:19.562 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-03-31 23:34:19.573 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection org.postgresql.jdbc.PgConnection@755658dc
+2026-03-31 23:34:19.573 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-03-31 23:34:19.582 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-31 23:34:19.582 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-31 23:34:19.585 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 23:34:19.590 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-31 23:34:19.591 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 13.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 23:34:19.604 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 23:34:19.616 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:34:19.676 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 23:34:19.810 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-03-31 23:34:19.818 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-03-31 23:34:19.833 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31 23:34:19.840 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-03-31 23:34:19.851 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-03-31 23:34:19.852 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-03-31 23:34:19.852 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:34:19.852 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-03-31 23:34:19.853 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-03-31 23:34:19.853 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-03-31 23:34:19.853 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-03-31 23:34:19.853 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-03-31 23:34:19.853 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-03-31 23:34:19.853 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-03-31 23:34:19.865 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-03-31 23:34:19.865 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-03-31 23:34:19.865 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-31 23:34:19.865 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1774996459865 with initial instances count: 4
+2026-03-31 23:34:19.867 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-03-31 23:34:19.867 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996459867, current=UP, previous=STARTING]
+2026-03-31 23:34:19.867 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:34:19.867 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:34:19.868 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+2026-03-31 23:34:19.868 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+2026-03-31 23:34:19.870 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:34:19.875 [restartedMain] INFO  c.t.m.PatientServiceApplication - Started PatientServiceApplication in 0.62 seconds (process running for 3331.539)
+2026-03-31 23:34:19.876 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-31 23:34:21.226 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 12 class path changes (12 additions, 0 deletions, 0 modifications)
+2026-03-31 23:34:21.226 [Thread-66] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-03-31 23:34:21.226 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996461226, current=DOWN, previous=UP]
+2026-03-31 23:34:21.227 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:34:21.227 [Thread-66] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 23:34:21.227 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:34:21.228 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 23:34:21.228 [Thread-66] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:34:21.228 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:34:21.229 [Thread-66] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:34:21.230 [Thread-66] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2026-03-31 23:34:21.230 [Thread-66] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2026-03-31 23:34:22.235 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-03-31 23:34:25.239 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-03-31 23:34:25.242 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - deregister  status: 200
+2026-03-31 23:34:25.242 [Thread-66] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-03-31 23:34:25.292 [restartedMain] INFO  c.t.m.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.8 with PID 12688 (/Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service/target/classes started by sagargopalbarate in /Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service)
+2026-03-31 23:34:25.292 [restartedMain] INFO  c.t.m.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 23:34:25.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:34:25.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:34:25.293 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@6ff5c39f uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:34:25.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:34:25.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:34:25.293 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@69f049b5 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:34:25.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 23:34:25.293 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 23:34:25.293 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@4bd9de1 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 23:34:25.399 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 23:34:25.402 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 1 JPA repository interface.
+2026-03-31 23:34:25.432 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=6b7a8b66-1da3-3931-acd0-c93443a2ec93
+2026-03-31 23:34:25.477 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+2026-03-31 23:34:25.478 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:34:25.478 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 23:34:25.478 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-31 23:34:25.485 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-31 23:34:25.485 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 192 ms
+2026-03-31 23:34:25.545 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2026-03-31 23:34:25.557 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection org.postgresql.jdbc.PgConnection@24ba62f9
+2026-03-31 23:34:25.557 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2026-03-31 23:34:25.565 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-31 23:34:25.566 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-31 23:34:25.569 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 23:34:25.573 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-31 23:34:25.574 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 13.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 23:34:25.586 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 23:34:25.596 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 23:34:25.655 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 23:34:25.785 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-03-31 23:34:25.793 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-03-31 23:34:25.808 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31 23:34:25.813 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-03-31 23:34:25.826 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-03-31 23:34:25.827 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-03-31 23:34:25.827 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:34:25.827 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-03-31 23:34:25.827 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-03-31 23:34:25.827 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-03-31 23:34:25.827 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-03-31 23:34:25.827 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-03-31 23:34:25.827 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-03-31 23:34:25.827 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-03-31 23:34:25.835 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-03-31 23:34:25.835 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-03-31 23:34:25.835 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-31 23:34:25.836 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1774996465835 with initial instances count: 4
+2026-03-31 23:34:25.837 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-03-31 23:34:25.838 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774996465838, current=UP, previous=STARTING]
+2026-03-31 23:34:25.838 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 23:34:25.838 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+2026-03-31 23:34:25.839 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+2026-03-31 23:34:25.839 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+2026-03-31 23:34:25.842 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 23:34:25.845 [restartedMain] INFO  c.t.m.PatientServiceApplication - Started PatientServiceApplication in 0.577 seconds (process running for 3337.51)
+2026-03-31 23:34:25.846 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-31 23:34:26.842 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2026-03-31 23:34:26.842 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Dropped 1 spans due to WebClientRequestException(Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411)
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST http://localhost:9411/api/v2/spans [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:318)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:174)
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:479)
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:443)
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:593)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:576)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:522)
+		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:261)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:326)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:342)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104)
+		at reactor.core.publisher.Mono.block(Mono.java:1779)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinWebClientSender.postSpans(ZipkinWebClientSender.java:58)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41)
+		at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123)
+		at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+		at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-31 23:34:57.770 [http-nio-8092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 23:34:57.772 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 23:34:57.780 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2026-03-31 23:39:05.423 [http-nio-8092-exec-10] INFO  c.t.m.controller.PatientController - Create patient
+2026-03-31 23:39:25.831 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

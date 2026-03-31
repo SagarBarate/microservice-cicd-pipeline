@@ -105,7 +105,7 @@ services:
       - healthflow-net
 
   appointment-service:
-    build: ./appiontment-service
+    build: ./appointment-service
     container_name: appointment-service
     ports:
       - "8093:8093"

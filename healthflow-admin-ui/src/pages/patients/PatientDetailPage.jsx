@@ -49,10 +49,22 @@ function PatientDetailPage() {
             <strong>Email:</strong> {patient?.email ?? "-"}
           </p>
           <p>
-            <strong>Phone:</strong> {patient?.phone ?? "-"}
+            <strong>Phone:</strong> {patient?.phoneNumber ?? "-"}
           </p>
           <p>
             <strong>Age:</strong> {patient?.age ?? "-"}
+          </p>
+          <p>
+            <strong>Gender:</strong> {patient?.gender ?? "-"}
+          </p>
+          <p>
+            <strong>Concern / notes:</strong> {patient?.concern ?? "-"}
+          </p>
+          <p>
+            <strong>Assigned doctor:</strong> {patient?.assignedDoctorName ?? "-"}
+          </p>
+          <p>
+            <strong>Doctor specialization:</strong> {patient?.assignedDoctorSpecialization ?? "-"}
           </p>
         </div>
       ) : null}

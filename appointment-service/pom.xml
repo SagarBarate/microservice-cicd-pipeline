@@ -12,7 +12,7 @@
 	<groupId>com.tus.microservices</groupId>
 	<artifactId>appointment-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>doctor-service</name>
+	<name>appointment-service</name>
 	<description>Microservices project for Spring Boot</description>
 	<url />
 	<licenses>
@@ -45,6 +45,10 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 
@@ -66,10 +70,13 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
 		<dependency>
-			<groupId>io.github.resilience4j</groupId>
-			<artifactId>resilience4j-spring-boot2</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
 		</dependency>
 
 		<dependency>

@@ -29,11 +29,6 @@ export async function deleteAllPatients() {
   return axiosClient.delete("/v1/patient");
 }
 
-export async function bookPatientAppointment(payload) {
-  const response = await axiosClient.post("/v1/patient/bookAppointment", payload);
-  return extractObject(response.data);
-}
-
 export async function patientHealth() {
   const response = await axiosClient.get("/v1/patient/test");
   return response.data;

@@ -2,21 +2,24 @@ package com.tus.microservices.service;
 
 import java.util.List;
 
+import com.tus.microservices.model.AssignDoctorRequest;
 import com.tus.microservices.model.PatientRecord;
 
 public interface PatientService {
 
-    public PatientRecord savePatient(PatientRecord patientRecord);
-	
-	public List<PatientRecord> getAllPatientData(); 
+	PatientRecord savePatient(PatientRecord patientRecord);
 
-	public List<PatientRecord> getAllPatientsDataByName(String name); 
-	
-	public PatientRecord getPatientDetails(Long id);
-	
-	public void deleteAll();
-	
-	public void deleteById(Long id);
+	List<PatientRecord> getAllPatientData();
 
-	public PatientRecord updatePatient(Long id, PatientRecord updateData);
+	List<PatientRecord> getAllPatientsDataByName(String name);
+
+	PatientRecord getPatientDetails(Long id);
+
+	void deleteAll();
+
+	void deleteById(Long id);
+
+	PatientRecord updatePatient(Long id, PatientRecord updateData);
+
+	PatientRecord assignDoctor(Long id, AssignDoctorRequest request);
 }

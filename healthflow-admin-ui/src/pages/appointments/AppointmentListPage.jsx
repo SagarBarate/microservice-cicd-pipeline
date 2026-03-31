@@ -37,13 +37,16 @@ function AppointmentListPage() {
         rows={rows}
         columns={[
           { key: "id", title: "ID" },
-          { key: "doctorId", title: "Doctor ID" },
-          { key: "patientId", title: "Patient ID" },
+          { key: "patientName", title: "Patient" },
+          { key: "doctorName", title: "Doctor" },
+          { key: "doctorSpecialization", title: "Specialization" },
+          { key: "patientConcern", title: "Concern" },
           {
             key: "appointmentDate",
-            title: "Appointment Date",
+            title: "Appointment date",
             render: (row) => readableDate(row?.appointmentDate)
-          }
+          },
+          { key: "status", title: "Status" }
         ]}
       />
     </section>

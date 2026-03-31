@@ -5,12 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-
 
 @Entity
 @Table(name = "patients")
@@ -19,11 +15,15 @@ import lombok.Setter;
 public class Patient {
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String name;
-    private int age;
-    private String gender;
-    private String phoneNumber;
-    private String email;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String name;
+	private int age;
+	private String gender;
+	private String phoneNumber;
+	private String email;
+	private String concern;
+	private Long assignedDoctorId;
+	private String assignedDoctorName;
+	private String assignedDoctorSpecialization;
 }

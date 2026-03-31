@@ -3785,3 +3785,342 @@ Caused by: java.net.ConnectException: Connection refused
 2026-03-31 22:41:39.654 [reactor-http-nio-3] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWdhciIsImlhdCI6MTc3NDk5MzI0NywiZXhwIjoxNzc0OTk2ODQ3fQ.vo4t5FH-KasWB45pq7yYIg_yT6Q6QW4nW6u2p2lFkOk
 2026-03-31 22:41:39.656 [reactor-http-nio-3] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sagar
 2026-03-31 22:42:20.603 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:47:20.586 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:52:20.592 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:57:20.598 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:02:20.602 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:07:20.606 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:12:20.613 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:17:20.617 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:22:20.622 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:23:06.918 [reactor-http-nio-4] WARN  c.t.m.security.JwtAuthFilter - Authorization header missing or malformed!
+2026-03-31 23:23:11.672 [reactor-http-nio-4] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1Nzg2LCJleHAiOjE3NzQ5OTkzODZ9.Y2QNOPCp3vEhxcjCxGOULJDtfqREcF9uUBDBhMEtets
+2026-03-31 23:23:11.675 [reactor-http-nio-4] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:11.688 [reactor-http-nio-5] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:11.688 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:11.688 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:11.691 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:11.691 [reactor-http-nio-5] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:11.691 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:11.717 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:11.720 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:11.720 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:11.721 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:11.726 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:11.728 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:13.850 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:13.853 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:13.866 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:13.868 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:14.592 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:14.593 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:14.601 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:14.602 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:15.302 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:15.304 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:23:15.317 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:23:15.318 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:24:02.173 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:24:02.182 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:24:02.226 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:24:02.226 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:25:26.883 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:25:26.887 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:25:26.910 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:25:26.911 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:25:34.324 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:25:34.328 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:25:34.368 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:25:34.369 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:25:41.341 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:25:41.343 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:25:41.391 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:25:41.394 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:25:59.423 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:25:59.428 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:25:59.440 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:25:59.441 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:27:20.625 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:30:34.303 [reactor-http-nio-1] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:30:34.303 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:30:34.303 [reactor-http-nio-10] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:30:34.307 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:30:34.307 [reactor-http-nio-1] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:30:34.307 [reactor-http-nio-10] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:30:34.331 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:30:34.332 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:30:34.334 [reactor-http-nio-10] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:30:34.336 [reactor-http-nio-10] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:30:34.337 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:30:34.337 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:32:20.626 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:33:01.599 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:01.599 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:01.599 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:01.603 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:01.603 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:01.604 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:01.614 [parallel-7] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:33:02.085 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:02.086 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:02.089 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:02.090 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:02.094 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:02.097 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:02.099 [parallel-10] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:33:02.786 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:02.786 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:02.786 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:02.788 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:02.788 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:02.788 [reactor-http-nio-7] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:02.789 [parallel-6] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:33:07.768 [reactor-http-nio-3] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWdhciIsImlhdCI6MTc3NDk5MzI0NywiZXhwIjoxNzc0OTk2ODQ3fQ.vo4t5FH-KasWB45pq7yYIg_yT6Q6QW4nW6u2p2lFkOk
+2026-03-31 23:33:07.771 [reactor-http-nio-3] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sagar
+2026-03-31 23:33:07.788 [reactor-http-nio-2] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWdhciIsImlhdCI6MTc3NDk5MzI0NywiZXhwIjoxNzc0OTk2ODQ3fQ.vo4t5FH-KasWB45pq7yYIg_yT6Q6QW4nW6u2p2lFkOk
+2026-03-31 23:33:07.789 [reactor-http-nio-2] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sagar
+2026-03-31 23:33:11.770 [reactor-http-nio-4] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWdhciIsImlhdCI6MTc3NDk5MzI0NywiZXhwIjoxNzc0OTk2ODQ3fQ.vo4t5FH-KasWB45pq7yYIg_yT6Q6QW4nW6u2p2lFkOk
+2026-03-31 23:33:11.773 [reactor-http-nio-4] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sagar
+2026-03-31 23:33:13.587 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:13.590 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:13.591 [parallel-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:33:13.597 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:13.597 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:13.598 [parallel-3] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:33:15.704 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:15.707 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:15.722 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:15.723 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:40.924 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:40.925 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWdhciIsImlhdCI6MTc3NDk5MzI0NywiZXhwIjoxNzc0OTk2ODQ3fQ.vo4t5FH-KasWB45pq7yYIg_yT6Q6QW4nW6u2p2lFkOk
+2026-03-31 23:33:40.928 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sagar
+2026-03-31 23:33:40.928 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:41.320 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWdhciIsImlhdCI6MTc3NDk5MzI0NywiZXhwIjoxNzc0OTk2ODQ3fQ.vo4t5FH-KasWB45pq7yYIg_yT6Q6QW4nW6u2p2lFkOk
+2026-03-31 23:33:41.321 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sagar
+2026-03-31 23:33:41.322 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:41.323 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:41.521 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzYWdhciIsImlhdCI6MTc3NDk5MzI0NywiZXhwIjoxNzc0OTk2ODQ3fQ.vo4t5FH-KasWB45pq7yYIg_yT6Q6QW4nW6u2p2lFkOk
+2026-03-31 23:33:41.521 [reactor-http-nio-6] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sagar
+2026-03-31 23:33:41.522 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:41.523 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:44.103 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:44.104 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:44.105 [parallel-5] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:33:44.110 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:44.112 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:44.113 [parallel-7] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:33:57.007 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:57.011 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:57.027 [reactor-http-nio-10] ERROR o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler - [f1d94387-267]  500 Server Error for HTTP GET "/v1/patient"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /192.168.0.120:8092
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/v1/patient" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-31 23:33:57.035 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:33:57.037 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:33:57.040 [reactor-http-nio-1] ERROR o.s.b.a.w.r.e.AbstractErrorWebExceptionHandler - [07287855-268]  500 Server Error for HTTP GET "/v1/patient"
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: /192.168.0.120:8092
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ CorsWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP GET "/v1/patient" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-31 23:34:07.549 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:34:07.560 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:34:11.670 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:34:11.672 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:34:11.673 [parallel-5] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:34:11.684 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:34:11.686 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:34:11.688 [parallel-7] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:34:12.924 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:34:12.924 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:34:12.938 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:34:12.939 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:34:57.747 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:34:57.755 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:34:57.804 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:34:57.805 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:34:59.769 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:34:59.773 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:34:59.777 [parallel-5] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:34:59.792 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:34:59.793 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:34:59.794 [parallel-7] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:35:21.991 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:35:21.994 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:35:21.996 [parallel-9] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:35:22.002 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:35:22.004 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:35:22.005 [parallel-1] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:35:23.127 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:35:23.127 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:35:23.128 [parallel-3] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:35:23.130 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:35:23.131 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:35:23.132 [parallel-5] WARN  o.s.c.l.core.RoundRobinLoadBalancer - No servers available for service: APPOINTMENT-SERVICE
+2026-03-31 23:37:20.628 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:37:39.469 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:39.472 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:39.498 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:39.498 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:40.672 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:40.673 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:40.704 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:40.705 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:41.843 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:41.847 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:41.860 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:41.863 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:43.094 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:43.094 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:43.187 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:43.187 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:44.329 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:44.331 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:44.343 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:44.345 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:45.624 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:45.627 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:45.650 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:45.651 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:46.667 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:46.670 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:37:46.685 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:37:46.685 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:38:18.714 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:38:18.720 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:38:18.751 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:38:18.752 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:38:19.976 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:38:19.979 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:38:20.029 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:38:20.030 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:38:21.907 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:38:21.909 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:38:21.965 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:38:21.970 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:05.243 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:05.247 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:05.498 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:05.499 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:05.506 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:05.506 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:09.269 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:09.271 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:09.308 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:09.310 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:10.279 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:10.281 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:10.299 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:10.301 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:13.694 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:13.698 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:13.720 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:13.721 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:17.483 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:17.485 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:17.511 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:17.513 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:21.872 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:21.875 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:21.884 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:21.885 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:22.563 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:22.565 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:22.585 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:22.588 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:25.715 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:25.717 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:25.734 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:25.737 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:29.412 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:29.418 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:29.436 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:29.440 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:30.168 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:30.169 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:30.209 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:30.210 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:31.115 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:31.117 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:31.159 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:31.160 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:32.133 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:32.136 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:32.154 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:32.156 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:34.372 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:34.374 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:34.390 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:34.391 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:35.398 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:35.399 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:35.414 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:35.415 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:37.191 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:37.193 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:37.207 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:37.209 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:37.919 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:37.921 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:37.932 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:37.933 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:40.421 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:40.425 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:40.445 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:40.450 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:54.515 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:54.519 [reactor-http-nio-9] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143
+2026-03-31 23:39:54.554 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Extracted JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzZ2IyMTQzIiwiaWF0IjoxNzc0OTk1NzkxLCJleHAiOjE3NzQ5OTkzOTF9.CAcFsdDDg6jE0ozBVDjhUOw5ZlZAo6iay5_SqkCGNaQ
+2026-03-31 23:39:54.554 [reactor-http-nio-8] INFO  c.t.m.security.JwtAuthFilter - Authenticated user: sgb2143

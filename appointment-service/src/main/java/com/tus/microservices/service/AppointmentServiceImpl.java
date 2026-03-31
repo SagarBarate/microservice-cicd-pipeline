@@ -1,78 +1,161 @@
 package com.tus.microservices.service;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.tus.microservices.client.DoctorClient;
+import com.tus.microservices.client.PatientClient;
+import com.tus.microservices.client.dto.AssignDoctorRequest;
+import com.tus.microservices.client.dto.DoctorDto;
+import com.tus.microservices.client.dto.PatientApiDto;
 import com.tus.microservices.entity.Appointment;
+import com.tus.microservices.exception.AppointmentNotFoundException;
+import com.tus.microservices.exception.AppointmentPersistenceException;
+import com.tus.microservices.exception.DoctorNotFoundException;
+import com.tus.microservices.exception.DownstreamServiceException;
+import com.tus.microservices.exception.PatientNotFoundException;
 import com.tus.microservices.mapper.AppointmentMapper;
-import com.tus.microservices.model.AppointmentRecord;
+import com.tus.microservices.model.AppointmentBookingRequest;
+import com.tus.microservices.model.AppointmentResponse;
+import com.tus.microservices.model.AppointmentStatus;
 import com.tus.microservices.repository.AppointmentRepository;
 
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import io.github.resilience4j.retry.annotation.Retry;
+import feign.FeignException;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service
+@RequiredArgsConstructor
 public class AppointmentServiceImpl implements AppointmentService {
 
-	
-	@Autowired
-	private AppointmentMapper mapper;
-	
-	@Autowired
-	private AppointmentRepository appointmentRepository;
+	private final DoctorClient doctorClient;
+	private final PatientClient patientClient;
+	private final AppointmentRepository appointmentRepository;
+	private final AppointmentMapper appointmentMapper;
 
 	@Override
-	@CircuitBreaker(name = "appointmentService", fallbackMethod = "fallbackForSaveAppointment")
-    @Retry(name = "appointmentService")
-	public AppointmentRecord saveAppointment(AppointmentRecord appointmentRecord) {
-		
-		if (appointmentRecord == null) {
-        throw new IllegalArgumentException("Appointment record cannot be null");
-    }
-		
-		// Simulate failure in 50% of cases
-	    if (new Random().nextBoolean()) {
-	        log.error("Simulated failure in saveAppointment!");
-	        throw new RuntimeException("Database unavailable - Simulated failure");
-	    }
-
-    log.info("Attempting to save appointment...");
-    Appointment appointment = mapper.recordDataToEntity(appointmentRecord);
-    appointmentRepository.save(appointment);
-    return mapper.entityDataToRecord(appointment);}
-
-	@Override
-	@CircuitBreaker(name = "appointmentService", fallbackMethod = "fallbackForGetAllAppointments")
-    @Retry(name = "appointmentService")
-	public List<AppointmentRecord> getAllAppointmentData() {
-		 log.info("Fetching all appointment records...");
-
-	        // Simulate failure in 50% of cases
-	        if (new java.util.Random().nextBoolean()) {
-	            log.error("Simulated failure in getAllAppointmentData!");
-	            throw new RuntimeException("Database unavailable - Simulated failure");
-	        }
-
-	        return mapper.entityListToRecordList(appointmentRepository.findAll());
+	public AppointmentResponse bookAppointment(AppointmentBookingRequest request) {
+		DoctorDto doctor = fetchDoctor(request.doctorId());
+		PatientApiDto patient = resolveAndAssignPatient(request, doctor);
+		return persistAppointment(request, doctor, patient);
 	}
 
-	 // Fallback Method
-    public AppointmentRecord fallbackForSaveAppointment(AppointmentRecord appointmentRecord, Throwable t) {
-        log.error("Circuit Breaker triggered! Reason: {}", t.getMessage(), t);
-        return null; // Indicating service failure to the controller
-    }
-    
-    // Fallback Method - Provides Default Response
-    public List<AppointmentRecord> fallbackForGetAllAppointments(Throwable t) {
-        log.error("Circuit Breaker triggered in getAllAppointmentData! Reason: {}", t.getMessage(), t);
-        
-        // Default response when service is down
-        return Collections.emptyList(); // Returning an empty list instead of null
-    }
+	private DoctorDto fetchDoctor(Long doctorId) {
+		try {
+			DoctorDto doctor = doctorClient.getDoctor(doctorId);
+			if (doctor == null || doctor.id() == null) {
+				throw new DoctorNotFoundException("Doctor not found with id: " + doctorId);
+			}
+			return doctor;
+		} catch (FeignException e) {
+			if (e.status() == 404) {
+				throw new DoctorNotFoundException("Doctor not found with id: " + doctorId);
+			}
+			log.error("Doctor service call failed for id {}", doctorId, e);
+			throw new DownstreamServiceException("Doctor service unavailable", e);
+		}
+	}
+
+	private PatientApiDto resolveAndAssignPatient(AppointmentBookingRequest request, DoctorDto doctor) {
+		PatientApiDto patient;
+		if (request.patientId() != null) {
+			patient = fetchPatient(request.patientId());
+			PatientApiDto merged = mergePatientUpdate(request, patient);
+			try {
+				patient = patientClient.updatePatient(patient.id(), merged);
+			} catch (FeignException e) {
+				if (e.status() == 400) {
+					throw new DownstreamServiceException("Patient update rejected by patient-service", e);
+				}
+				log.error("Patient update failed for id {}", patient.id(), e);
+				throw new DownstreamServiceException("Patient service unavailable", e);
+			}
+		} else {
+			patient = createNewPatient(request);
+		}
+		return assignDoctorToPatient(patient.id(), doctor);
+	}
+
+	private PatientApiDto fetchPatient(Long patientId) {
+		try {
+			PatientApiDto patient = patientClient.getPatient(patientId);
+			if (patient == null || patient.id() == null) {
+				throw new PatientNotFoundException("Patient not found with id: " + patientId);
+			}
+			return patient;
+		} catch (FeignException e) {
+			if (e.status() == 404) {
+				throw new PatientNotFoundException("Patient not found with id: " + patientId);
+			}
+			log.error("Patient service call failed for id {}", patientId, e);
+			throw new DownstreamServiceException("Patient service unavailable", e);
+		}
+	}
+
+	private PatientApiDto mergePatientUpdate(AppointmentBookingRequest request, PatientApiDto existing) {
+		int age = request.patientAge() != null ? request.patientAge() : existing.age();
+		String gender = request.patientGender() != null ? request.patientGender() : existing.gender();
+		String phone = request.patientPhone() != null ? request.patientPhone() : existing.phoneNumber();
+		String email = request.patientEmail() != null ? request.patientEmail() : existing.email();
+		String concern = request.patientConcern() != null ? request.patientConcern() : existing.concern();
+		return new PatientApiDto(existing.id(), request.patientName(), age, gender, phone, email, concern,
+				existing.assignedDoctorId(), existing.assignedDoctorName(), existing.assignedDoctorSpecialization());
+	}
+
+	private PatientApiDto createNewPatient(AppointmentBookingRequest request) {
+		int age = request.patientAge() != null ? request.patientAge() : 0;
+		PatientApiDto body = new PatientApiDto(null, request.patientName(), age, request.patientGender(),
+				request.patientPhone(), request.patientEmail(), request.patientConcern(), null, null, null);
+		try {
+			return patientClient.createPatient(body);
+		} catch (FeignException e) {
+			log.error("Patient creation failed", e);
+			throw new DownstreamServiceException("Could not create patient in patient-service", e);
+		}
+	}
+
+	private PatientApiDto assignDoctorToPatient(Long patientId, DoctorDto doctor) {
+		AssignDoctorRequest assign = new AssignDoctorRequest(doctor.id(), doctor.name(), doctor.specialization());
+		try {
+			return patientClient.assignDoctor(patientId, assign);
+		} catch (FeignException e) {
+			log.error("Assign doctor failed for patient {}", patientId, e);
+			throw new DownstreamServiceException("Could not assign doctor to patient", e);
+		}
+	}
+
+	private AppointmentResponse persistAppointment(AppointmentBookingRequest request, DoctorDto doctor,
+			PatientApiDto patient) {
+		Appointment appointment = new Appointment();
+		appointment.setDoctorId(doctor.id());
+		appointment.setDoctorName(doctor.name());
+		appointment.setDoctorSpecialization(doctor.specialization());
+		appointment.setPatientId(patient.id());
+		appointment.setPatientName(patient.name());
+		appointment.setPatientConcern(request.patientConcern());
+		appointment.setAppointmentDate(request.appointmentDate());
+		appointment.setStatus(AppointmentStatus.BOOKED);
+		try {
+			Appointment saved = appointmentRepository.save(appointment);
+			return appointmentMapper.toResponse(saved);
+		} catch (Exception e) {
+			log.error(
+					"Appointment persistence failed after patient {} and doctor {} were processed; manual reconciliation may be needed",
+					patient.id(), doctor.id(), e);
+			throw new AppointmentPersistenceException("Could not save appointment", e);
+		}
+	}
+
+	@Override
+	public List<AppointmentResponse> getAllAppointments() {
+		return appointmentMapper.toResponseList(appointmentRepository.findAll());
+	}
+
+	@Override
+	public AppointmentResponse getAppointmentById(Long id) {
+		return appointmentRepository.findById(id).map(appointmentMapper::toResponse)
+				.orElseThrow(() -> new AppointmentNotFoundException("Appointment not found with id: " + id));
+	}
 }

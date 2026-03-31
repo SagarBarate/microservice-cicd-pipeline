@@ -35,7 +35,7 @@ echo "4/6 Patient Service (8092)"
 start_service "patient-service" "patient-service"
 
 echo "5/6 Appointment Service (8093)"
-start_service "appointment-service" "appiontment-service"
+start_service "appointment-service" "appointment-service"
 
 sleep 15
 

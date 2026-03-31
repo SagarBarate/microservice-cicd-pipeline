@@ -1170,3 +1170,66 @@ Caused by: java.net.ConnectException: Connection refused
 2026-03-31 22:41:23.248 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - Doctor logs
 2026-03-31 22:41:24.989 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - get doctors list
 2026-03-31 22:41:25.001 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 22:44:39.366 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:49:39.371 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:54:39.378 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:59:39.384 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:04:39.394 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:09:39.401 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:14:39.409 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:19:39.412 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:23:11.702 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:23:11.722 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:23:13.856 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:23:13.871 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:24:39.417 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:25:34.352 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:25:34.372 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:29:39.418 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:30:34.328 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - Doctor logs
+2026-03-31 23:30:34.339 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - Doctor logs
+2026-03-31 23:33:01.663 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - Doctor logs
+2026-03-31 23:33:02.109 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - Doctor logs
+2026-03-31 23:33:02.792 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - Doctor logs
+2026-03-31 23:33:07.774 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:07.792 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:11.783 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:15.714 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:15.725 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:40.938 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:40.939 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:41.323 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:41.324 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:41.524 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:33:41.524 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:34:12.929 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:34:12.941 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:34:39.416 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:37:40.687 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:37:40.707 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:37:44.335 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:37:44.348 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:37:46.676 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:37:46.688 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:38:21.928 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:38:21.980 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:05.362 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:39:09.284 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:09.317 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:17.493 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:17.519 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:22.572 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:22.593 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:25.724 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:39:25.742 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:39:30.191 [http-nio-8091-exec-1] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:30.212 [http-nio-8091-exec-3] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:32.143 [http-nio-8091-exec-2] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:32.160 [http-nio-8091-exec-4] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:37.924 [http-nio-8091-exec-5] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:37.937 [http-nio-8091-exec-6] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:39.423 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 23:39:40.431 [http-nio-8091-exec-7] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:39:40.455 [http-nio-8091-exec-9] INFO  c.t.m.controller.DoctorController - get doctor by id:1
+2026-03-31 23:39:54.526 [http-nio-8091-exec-8] INFO  c.t.m.controller.DoctorController - get doctors list
+2026-03-31 23:39:54.556 [http-nio-8091-exec-10] INFO  c.t.m.controller.DoctorController - get doctors list

@@ -8,12 +8,19 @@ export const doctorFormModel = {
 export const patientFormModel = {
   name: "",
   email: "",
-  phone: "",
-  age: ""
+  phoneNumber: "",
+  age: "",
+  gender: ""
 };
 
 export const appointmentFormModel = {
   doctorId: "",
   patientId: "",
+  patientName: "",
+  patientEmail: "",
+  patientPhone: "",
+  patientAge: "",
+  patientGender: "",
+  patientConcern: "",
   appointmentDate: ""
 };

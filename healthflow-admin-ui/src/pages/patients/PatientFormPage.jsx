@@ -29,8 +29,9 @@ function PatientFormPage() {
         setForm({
           name: data?.name || "",
           email: data?.email || "",
-          phone: data?.phone || "",
-          age: data?.age || ""
+          phoneNumber: data?.phoneNumber || "",
+          age: data?.age !== undefined && data?.age !== null ? String(data.age) : "",
+          gender: data?.gender || ""
         });
       } catch (err) {
         setAlert({ type: "error", message: getErrorMessage(err, "Failed to load patient.") });
@@ -49,12 +50,23 @@ function PatientFormPage() {
     return Object.keys(nextErrors).length === 0;
   };
 
+  const buildPayload = () => {
+    const ageNum = form.age !== "" && form.age != null ? Number(form.age) : 0;
+    return {
+      name: form.name.trim(),
+      email: form.email.trim() || null,
+      phoneNumber: form.phoneNumber?.trim() || "",
+      age: Number.isFinite(ageNum) ? ageNum : 0,
+      gender: form.gender?.trim() || ""
+    };
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
     try {
       setSaving(true);
-      const payload = { ...form, age: form.age ? Number(form.age) : null };
+      const payload = buildPayload();
       if (isEdit) {
         await updatePatient(id, payload);
       } else {
@@ -99,9 +111,9 @@ function PatientFormPage() {
         />
         <InputField
           label="Phone"
-          name="phone"
-          value={form.phone}
-          onChange={(e) => setForm((prev) => ({ ...prev, phone: e.target.value }))}
+          name="phoneNumber"
+          value={form.phoneNumber}
+          onChange={(e) => setForm((prev) => ({ ...prev, phoneNumber: e.target.value }))}
         />
         <InputField
           label="Age"
@@ -110,6 +122,20 @@ function PatientFormPage() {
           onChange={(e) => setForm((prev) => ({ ...prev, age: e.target.value }))}
           type="number"
         />
+        <div className="form-group">
+          <label htmlFor="gender">Gender</label>
+          <select
+            id="gender"
+            name="gender"
+            value={form.gender}
+            onChange={(e) => setForm((prev) => ({ ...prev, gender: e.target.value }))}
+          >
+            <option value="">Prefer not to say</option>
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
         <button className="btn btn-primary" type="submit" disabled={saving}>
           {saving ? "Saving..." : "Save Patient"}
         </button>

@@ -23,10 +23,20 @@ export const readableDate = (dateValue) => {
 };
 
 export const getErrorMessage = (error, fallback = "Something went wrong.") => {
-  return (
-    error?.response?.data?.message ||
-    error?.response?.data?.error ||
-    error?.message ||
-    fallback
-  );
+  const data = error?.response?.data;
+  if (typeof data?.message === "string" && data.message.trim()) {
+    return data.message;
+  }
+  if (data?.errors && typeof data.errors === "object") {
+    const values = Object.values(data.errors);
+    const first = values.find((v) => typeof v === "string" && v.trim());
+    if (first) return first;
+  }
+  if (typeof data?.error === "string" && data.error.trim()) {
+    return data.error;
+  }
+  if (typeof error?.message === "string" && error.message.trim()) {
+    return error.message;
+  }
+  return fallback;
 };
