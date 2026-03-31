@@ -1,2 +1,0 @@
-# doctor-service
-doctor service
