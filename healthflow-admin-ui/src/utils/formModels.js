@@ -2,7 +2,7 @@ export const doctorFormModel = {
   name: "",
   specialization: "",
   email: "",
-  phone: ""
+  phoneNumber: ""
 };
 
 export const patientFormModel = {

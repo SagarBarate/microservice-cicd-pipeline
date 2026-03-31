@@ -605,3 +605,132 @@ Caused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOM
 2026-03-31 18:05:01.190 [http-nio-8092-exec-10] INFO  c.t.m.controller.PatientController - Patient logs
 2026-03-31 18:05:01.201 [http-nio-8092-exec-1] INFO  c.t.m.controller.PatientController - Patient logs
 2026-03-31 18:08:49.627 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 18:13:49.636 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 18:16:06.236 [http-nio-8092-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:16:06.237 [http-nio-8092-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:16:06.249 [http-nio-8092-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:16:06.250 [http-nio-8092-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:16:10.081 [http-nio-8092-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:16:10.081 [http-nio-8092-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:16:10.096 [http-nio-8092-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:16:10.096 [http-nio-8092-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:16:46.875 [http-nio-8092-exec-7] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 18:16:46.883 [http-nio-8092-exec-8] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 18:16:53.379 [http-nio-8092-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:16:53.380 [http-nio-8092-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:16:53.392 [http-nio-8092-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:16:53.392 [http-nio-8092-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:16:55.077 [http-nio-8092-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:16:55.078 [http-nio-8092-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:16:55.094 [http-nio-8092-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:16:55.094 [http-nio-8092-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:18:16.525 [http-nio-8092-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:18:16.526 [http-nio-8092-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:18:16.539 [http-nio-8092-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:18:16.539 [http-nio-8092-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:18:18.555 [http-nio-8092-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:18:18.556 [http-nio-8092-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:18:18.570 [http-nio-8092-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:18:18.571 [http-nio-8092-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:18:21.419 [http-nio-8092-exec-7] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 18:18:21.431 [http-nio-8092-exec-8] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 18:18:49.640 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 18:19:11.217 [http-nio-8092-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:11.218 [http-nio-8092-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:19:11.235 [http-nio-8092-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:11.235 [http-nio-8092-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:19:12.710 [http-nio-8092-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:12.710 [http-nio-8092-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:19:12.724 [http-nio-8092-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:12.724 [http-nio-8092-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:19:22.115 [http-nio-8092-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:22.115 [http-nio-8092-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:19:22.131 [http-nio-8092-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:22.134 [http-nio-8092-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:19:24.183 [http-nio-8092-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:24.184 [http-nio-8092-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:19:24.195 [http-nio-8092-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:24.195 [http-nio-8092-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:19:28.736 [http-nio-8092-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:28.737 [http-nio-8092-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:19:28.756 [http-nio-8092-exec-8] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:19:28.756 [http-nio-8092-exec-8] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:21:57.040 [http-nio-8092-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:21:57.043 [http-nio-8092-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:21:57.055 [http-nio-8092-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:21:57.055 [http-nio-8092-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:23:49.646 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 18:28:00.979 [http-nio-8092-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:28:00.980 [http-nio-8092-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:28:00.989 [http-nio-8092-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:28:00.989 [http-nio-8092-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:28:13.753 [http-nio-8092-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:28:13.753 [http-nio-8092-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:28:13.771 [http-nio-8092-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:28:13.772 [http-nio-8092-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:28:49.651 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 18:33:49.656 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 18:38:49.658 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 18:39:09.782 [http-nio-8092-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:39:09.783 [http-nio-8092-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:39:09.816 [http-nio-8092-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:39:09.817 [http-nio-8092-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:39:12.150 [http-nio-8092-exec-7] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 18:39:12.164 [http-nio-8092-exec-8] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 18:39:15.293 [http-nio-8092-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:39:15.293 [http-nio-8092-exec-9] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:39:15.307 [http-nio-8092-exec-10] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:39:15.307 [http-nio-8092-exec-10] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:40:38.452 [http-nio-8092-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:40:38.453 [http-nio-8092-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:40:38.463 [http-nio-8092-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:40:38.463 [http-nio-8092-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:41:49.732 [http-nio-8092-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:41:49.733 [http-nio-8092-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:41:49.747 [http-nio-8092-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:41:49.748 [http-nio-8092-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:41:53.089 [http-nio-8092-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:41:53.089 [http-nio-8092-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:41:53.103 [http-nio-8092-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 18:41:53.103 [http-nio-8092-exec-6] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 18:43:49.680 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 18:48:49.691 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 18:53:48.124 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m28s793ms).

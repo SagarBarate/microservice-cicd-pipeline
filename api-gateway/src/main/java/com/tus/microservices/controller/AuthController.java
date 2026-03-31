@@ -13,7 +13,6 @@ import com.tus.microservices.security.JwtUtil;
 public class AuthController {
 
     private final JwtUtil jwtUtil;
-
     public AuthController(JwtUtil jwtUtil) {
         this.jwtUtil = jwtUtil;
     }
@@ -23,4 +22,5 @@ public class AuthController {
         String token = jwtUtil.generateToken(username);
         return ResponseEntity.ok(token);
     }
+    
 }

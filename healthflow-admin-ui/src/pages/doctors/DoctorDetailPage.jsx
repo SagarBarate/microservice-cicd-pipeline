@@ -52,7 +52,7 @@ function DoctorDetailPage() {
             <strong>Email:</strong> {doctor?.email ?? "-"}
           </p>
           <p>
-            <strong>Phone:</strong> {doctor?.phone ?? "-"}
+            <strong>Phone:</strong> {doctor?.phoneNumber ?? "-"}
           </p>
         </div>
       ) : null}

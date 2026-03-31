@@ -30,7 +30,7 @@ function DoctorFormPage() {
           name: data?.name || "",
           specialization: data?.specialization || "",
           email: data?.email || "",
-          phone: data?.phone || ""
+          phoneNumber: data?.phoneNumber || ""
         });
       } catch (err) {
         setAlert({ type: "error", message: getErrorMessage(err, "Failed to load doctor.") });
@@ -104,9 +104,9 @@ function DoctorFormPage() {
         />
         <InputField
           label="Phone"
-          name="phone"
-          value={form.phone}
-          onChange={(e) => setForm((prev) => ({ ...prev, phone: e.target.value }))}
+          name="phoneNumber"
+          value={form.phoneNumber}
+          onChange={(e) => setForm((prev) => ({ ...prev, phoneNumber: e.target.value }))}
         />
         <button className="btn btn-primary" type="submit" disabled={saving}>
           {saving ? "Saving..." : "Save Doctor"}
