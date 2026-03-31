@@ -734,3 +734,783 @@ Caused by: io.netty.resolver.dns.DnsErrorCauseException: Query failed with NXDOM
 2026-03-31 18:43:49.680 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2026-03-31 18:48:49.691 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2026-03-31 18:53:48.124 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m28s793ms).
+2026-03-31 18:57:48.483 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 19:02:48.490 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 19:07:48.433 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 19:12:48.432 [AsyncResolver-bootstrap-executor-%d] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 19:14:15.363 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-03-31 19:14:15.366 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774980855366, current=DOWN, previous=UP]
+2026-03-31 19:14:15.367 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/172.20.10.2:patient-service:8092: registering service...
+2026-03-31 19:14:15.392 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 19:14:15.396 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 19:14:15.399 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/172.20.10.2:patient-service:8092 - registration status: 204
+2026-03-31 19:14:15.425 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 19:14:15.428 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-31 19:14:15.429 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-31 19:14:16.214 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-03-31 19:14:19.220 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-03-31 19:14:19.234 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/172.20.10.2:patient-service:8092 - deregister  status: 200
+2026-03-31 19:14:19.234 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-03-31 22:30:12.372 [restartedMain] INFO  c.t.m.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.8 with PID 10923 (/Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service/target/classes started by sagargopalbarate in /Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service)
+2026-03-31 22:30:12.374 [restartedMain] INFO  c.t.m.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 22:30:12.386 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:30:12.386 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:30:12.386 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@4c18276a uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:30:12.386 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:30:12.386 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:30:12.387 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@6e007301 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:30:12.387 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:30:12.387 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:30:12.387 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@20eb51e6 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:30:12.387 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-31 22:30:12.387 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-31 22:30:12.667 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 22:30:12.709 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2026-03-31 22:30:12.817 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f99da68a-fed0-39e4-ba69-ccef9beef042
+2026-03-31 22:30:13.055 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+2026-03-31 22:30:13.059 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+2026-03-31 22:30:13.060 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 22:30:13.060 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-31 22:30:13.075 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-31 22:30:13.078 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 688 ms
+2026-03-31 22:30:13.235 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2026-03-31 22:30:14.241 [restartedMain] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Timed out waiting for in-flight spans to send
+2026-03-31 22:30:14.247 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-03-31 22:30:14.269 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-31 22:30:14.277 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2026-03-31 22:31:36.545 [restartedMain] INFO  c.t.m.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.8 with PID 11231 (/Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service/target/classes started by sagargopalbarate in /Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service)
+2026-03-31 22:31:36.547 [restartedMain] INFO  c.t.m.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 22:31:36.559 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:31:36.559 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:31:36.559 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@39f2da8 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:31:36.559 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:31:36.559 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:31:36.560 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@1e804f7d uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:31:36.560 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:31:36.560 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:31:36.560 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@33c30213 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:31:36.560 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-31 22:31:36.560 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-31 22:31:36.850 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 22:31:36.893 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interface.
+2026-03-31 22:31:36.969 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f99da68a-fed0-39e4-ba69-ccef9beef042
+2026-03-31 22:31:37.226 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+2026-03-31 22:31:37.231 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+2026-03-31 22:31:37.232 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 22:31:37.232 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-31 22:31:37.249 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-31 22:31:37.249 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 689 ms
+2026-03-31 22:31:37.464 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-31 22:31:37.482 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-31 22:31:37.491 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-31 22:31:37.564 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 22:31:37.573 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-31 22:31:37.607 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a92b1ef
+2026-03-31 22:31:37.607 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-31 22:31:37.621 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-31 22:31:37.627 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 13.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 22:31:37.854 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 22:31:37.900 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table patients (id bigint generated by default as identity, age integer not null, email varchar(255), gender varchar(255), name varchar(255), phoneNumber varchar(255), primary key (id))" via JDBC [ERROR: no schema has been selected to create in
+  Position: 14]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table patients (id bigint generated by default as identity, age integer not null, email varchar(255), gender varchar(255), name varchar(255), phoneNumber varchar(255), primary key (id))" via JDBC [ERROR: no schema has been selected to create in
+  Position: 14]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:516)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:316)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:80)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.tus.microservices.PatientServiceApplication.main(PatientServiceApplication.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: no schema has been selected to create in
+  Position: 14
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 40 common frames omitted
+2026-03-31 22:31:37.902 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 22:31:38.030 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 22:31:38.047 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-03-31 22:31:38.064 [restartedMain] INFO  o.s.c.o.FeignClientFactoryBean - For 'appointment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-03-31 22:31:38.318 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-03-31 22:31:38.334 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31 22:31:38.340 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-03-31 22:31:38.371 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-03-31 22:31:38.379 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-03-31 22:31:38.380 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:31:38.383 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-03-31 22:31:38.383 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-03-31 22:31:38.383 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-03-31 22:31:38.383 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-03-31 22:31:38.383 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-03-31 22:31:38.383 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-03-31 22:31:38.383 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-03-31 22:31:38.473 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-03-31 22:31:38.474 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-03-31 22:31:38.474 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-31 22:31:38.475 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1774992698474 with initial instances count: 3
+2026-03-31 22:31:38.477 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-03-31 22:31:38.477 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774992698477, current=UP, previous=STARTING]
+2026-03-31 22:31:38.478 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 22:31:38.478 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+2026-03-31 22:31:38.483 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+2026-03-31 22:31:38.484 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+2026-03-31 22:31:38.491 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 22:31:38.494 [restartedMain] INFO  c.t.m.PatientServiceApplication - Started PatientServiceApplication in 2.214 seconds (process running for 2.408)
+2026-03-31 22:32:38.667 [http-nio-8092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 22:32:38.668 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 22:32:38.672 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-03-31 22:32:38.738 [http-nio-8092-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 22:32:38.739 [http-nio-8092-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 22:32:38.759 [http-nio-8092-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 22:32:38.762 [http-nio-8092-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 22:32:39.799 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-03-31 22:32:39.838 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2026-03-31 22:32:39.838 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Dropped 1 spans due to WebClientRequestException(Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411)
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST http://localhost:9411/api/v2/spans [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:318)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:174)
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:479)
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:443)
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:593)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:576)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:522)
+		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:261)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:326)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:342)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104)
+		at reactor.core.publisher.Mono.block(Mono.java:1779)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinWebClientSender.postSpans(ZipkinWebClientSender.java:58)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41)
+		at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123)
+		at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+		at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-31 22:32:45.909 [http-nio-8092-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 22:32:45.909 [http-nio-8092-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 22:32:45.923 [http-nio-8092-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 22:32:45.925 [http-nio-8092-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "patients" does not exist
+  Position: 80
+2026-03-31 22:35:07.309 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
+2026-03-31 22:35:07.314 [Thread-1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-03-31 22:35:07.314 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774992907314, current=DOWN, previous=UP]
+2026-03-31 22:35:07.314 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 22:35:07.325 [Thread-1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 22:35:07.328 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8092"]
+2026-03-31 22:35:07.333 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 22:35:07.333 [Thread-1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8092"]
+2026-03-31 22:35:07.335 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 22:35:07.360 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 22:35:07.362 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-31 22:35:07.365 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-31 22:35:08.302 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-03-31 22:35:11.308 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-03-31 22:35:11.308 [DiscoveryClient-%d] WARN  c.n.discovery.TimedSupervisorTask - task supervisor shutting down, can't accept the task
+2026-03-31 22:35:11.317 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - deregister  status: 200
+2026-03-31 22:35:11.317 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-03-31 22:35:11.423 [restartedMain] INFO  c.t.m.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.8 with PID 11231 (/Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service/target/classes started by sagargopalbarate in /Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service)
+2026-03-31 22:35:11.424 [restartedMain] INFO  c.t.m.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 22:35:11.424 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:35:11.424 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:35:11.424 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@3eee4a3b uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:35:11.424 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:35:11.425 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:35:11.425 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@41b2a0c9 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:35:11.425 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:35:11.425 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:35:11.425 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@28e29390 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:35:11.541 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 22:35:11.544 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interface.
+2026-03-31 22:35:11.582 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f99da68a-fed0-39e4-ba69-ccef9beef042
+2026-03-31 22:35:11.651 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+2026-03-31 22:35:11.651 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+2026-03-31 22:35:11.652 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 22:35:11.652 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-31 22:35:11.660 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-31 22:35:11.660 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 235 ms
+2026-03-31 22:35:11.733 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-31 22:35:11.733 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-31 22:35:11.738 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 22:35:11.738 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-03-31 22:35:11.749 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@52a5f7e9
+2026-03-31 22:35:11.749 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-03-31 22:35:11.756 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-31 22:35:11.757 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 13.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 22:35:11.774 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 22:35:11.792 [restartedMain] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table "hsm-patient".patients (id bigint generated by default as identity, age integer not null, email varchar(255), gender varchar(255), name varchar(255), phoneNumber varchar(255), primary key (id))" via JDBC [ERROR: schema "hsm-patient" does not exist
+  Position: 14]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table "hsm-patient".patients (id bigint generated by default as identity, age integer not null, email varchar(255), gender varchar(255), name varchar(255), phoneNumber varchar(255), primary key (id))" via JDBC [ERROR: schema "hsm-patient" does not exist
+  Position: 14]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:516)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:316)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:80)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1517)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.tus.microservices.PatientServiceApplication.main(PatientServiceApplication.java:14)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: schema "hsm-patient" does not exist
+  Position: 14
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 40 common frames omitted
+2026-03-31 22:35:11.793 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 22:35:11.844 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 22:35:11.854 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-03-31 22:35:11.865 [restartedMain] INFO  o.s.c.o.FeignClientFactoryBean - For 'appointment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-03-31 22:35:12.041 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-03-31 22:35:12.058 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31 22:35:12.062 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-03-31 22:35:12.079 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-03-31 22:35:12.080 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-03-31 22:35:12.080 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:35:12.080 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-03-31 22:35:12.080 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-03-31 22:35:12.080 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-03-31 22:35:12.080 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-03-31 22:35:12.081 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-03-31 22:35:12.081 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-03-31 22:35:12.081 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-03-31 22:35:12.097 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-03-31 22:35:12.097 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-03-31 22:35:12.097 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-31 22:35:12.097 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1774992912097 with initial instances count: 5
+2026-03-31 22:35:12.099 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-03-31 22:35:12.100 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774992912100, current=UP, previous=STARTING]
+2026-03-31 22:35:12.100 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 22:35:12.100 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+2026-03-31 22:35:12.101 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+2026-03-31 22:35:12.102 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+2026-03-31 22:35:12.106 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 22:35:12.110 [restartedMain] INFO  c.t.m.PatientServiceApplication - Started PatientServiceApplication in 0.716 seconds (process running for 216.024)
+2026-03-31 22:35:12.112 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-03-31 22:35:24.162 [http-nio-8092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 22:35:24.162 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 22:35:24.165 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-03-31 22:35:24.172 [http-nio-8092-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 22:35:24.177 [http-nio-8092-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "hsm-patient.patients" does not exist
+  Position: 80
+2026-03-31 22:35:24.188 [http-nio-8092-exec-2] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 22:35:24.188 [http-nio-8092-exec-2] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "hsm-patient.patients" does not exist
+  Position: 80
+2026-03-31 22:35:49.776 [http-nio-8092-exec-3] INFO  c.t.m.controller.PatientController - Save Doctor
+2026-03-31 22:35:49.792 [http-nio-8092-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 22:35:49.792 [http-nio-8092-exec-3] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "hsm-patient.patients" does not exist
+  Position: 13
+2026-03-31 22:35:49.805 [http-nio-8092-exec-4] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 22:35:49.805 [http-nio-8092-exec-4] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "hsm-patient.patients" does not exist
+  Position: 80
+2026-03-31 22:35:49.817 [http-nio-8092-exec-5] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 42P01
+2026-03-31 22:35:49.818 [http-nio-8092-exec-5] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - ERROR: relation "hsm-patient.patients" does not exist
+  Position: 80
+2026-03-31 22:36:43.167 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2026-03-31 22:36:43.168 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Dropped 1 spans due to WebClientRequestException(Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411)
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST http://localhost:9411/api/v2/spans [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:318)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:174)
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:479)
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:443)
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:593)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:576)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:522)
+		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:261)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:326)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:342)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104)
+		at reactor.core.publisher.Mono.block(Mono.java:1779)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinWebClientSender.postSpans(ZipkinWebClientSender.java:58)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41)
+		at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123)
+		at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+		at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-31 22:38:38.014 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application PATIENT-SERVICE with eureka with status DOWN
+2026-03-31 22:38:38.016 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774993118016, current=DOWN, previous=UP]
+2026-03-31 22:38:38.017 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 22:38:38.026 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-31 22:38:38.031 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 22:38:38.033 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-31 22:38:38.044 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 22:38:38.046 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-03-31 22:38:38.049 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-03-31 22:38:38.583 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2026-03-31 22:38:41.585 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2026-03-31 22:38:41.593 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - deregister  status: 200
+2026-03-31 22:38:41.594 [SpringApplicationShutdownHook] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2026-03-31 22:38:48.884 [restartedMain] INFO  c.t.m.PatientServiceApplication - Starting PatientServiceApplication using Java 21.0.8 with PID 12688 (/Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service/target/classes started by sagargopalbarate in /Users/sagargopalbarate/Desktop/Sagar'Projects/HealthFlowDPA-main/patient-service)
+2026-03-31 22:38:48.886 [restartedMain] INFO  c.t.m.PatientServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-31 22:38:48.898 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:38:48.898 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:38:48.899 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@29e4bf23 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:38:48.899 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:38:48.899 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:38:48.899 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@27d0947a uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:38:48.899 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8888
+2026-03-31 22:38:48.899 [restartedMain] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused. Will be trying the next url if available
+2026-03-31 22:38:48.899 [restartedMain] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@6cc27a23 uris = array<String>['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:8888/patient-service/default": Connection refused
+2026-03-31 22:38:48.899 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-31 22:38:48.899 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-31 22:38:49.215 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31 22:38:49.261 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2026-03-31 22:38:49.343 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f99da68a-fed0-39e4-ba69-ccef9beef042
+2026-03-31 22:38:49.600 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8092 (http)
+2026-03-31 22:38:49.605 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8092"]
+2026-03-31 22:38:49.606 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-31 22:38:49.606 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-31 22:38:49.622 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-31 22:38:49.622 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 722 ms
+2026-03-31 22:38:49.827 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-31 22:38:49.867 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@32526134
+2026-03-31 22:38:49.867 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-31 22:38:49.906 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-31 22:38:49.924 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-31 22:38:49.934 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-31 22:38:50.017 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31 22:38:50.039 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-31 22:38:50.045 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 13.22
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31 22:38:50.299 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31 22:38:50.337 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31 22:38:50.488 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31 22:38:50.505 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2026-03-31 22:38:50.530 [restartedMain] INFO  o.s.c.o.FeignClientFactoryBean - For 'appointment-service' URL not provided. Will try picking an instance via load-balancing.
+2026-03-31 22:38:50.826 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2026-03-31 22:38:50.844 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31 22:38:50.855 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-03-31 22:38:50.888 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2026-03-31 22:38:50.897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2026-03-31 22:38:50.898 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2026-03-31 22:38:50.901 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2026-03-31 22:38:50.901 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2026-03-31 22:38:50.901 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2026-03-31 22:38:50.901 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2026-03-31 22:38:50.901 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2026-03-31 22:38:50.901 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2026-03-31 22:38:50.901 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2026-03-31 22:38:51.008 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2026-03-31 22:38:51.009 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2026-03-31 22:38:51.009 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-31 22:38:51.010 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1774993131010 with initial instances count: 5
+2026-03-31 22:38:51.012 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application PATIENT-SERVICE with eureka with status UP
+2026-03-31 22:38:51.013 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1774993131013, current=UP, previous=STARTING]
+2026-03-31 22:38:51.013 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092: registering service...
+2026-03-31 22:38:51.013 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8092"]
+2026-03-31 22:38:51.020 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8092 (http) with context path '/'
+2026-03-31 22:38:51.021 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8092
+2026-03-31 22:38:51.027 [DiscoveryClient-InstanceInfoReplicator-%d] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_PATIENT-SERVICE/192.168.0.120:patient-service:8092 - registration status: 204
+2026-03-31 22:38:51.031 [restartedMain] INFO  c.t.m.PatientServiceApplication - Started PatientServiceApplication in 2.45 seconds (process running for 2.656)
+2026-03-31 22:39:00.471 [http-nio-8092-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31 22:39:00.471 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-31 22:39:00.472 [http-nio-8092-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-03-31 22:39:19.665 [http-nio-8092-exec-3] INFO  c.t.m.controller.PatientController - Save Doctor
+2026-03-31 22:39:52.137 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] ERROR i.n.r.d.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-03-31 22:39:52.184 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2026-03-31 22:39:52.184 [AsyncReporter{ZipkinWebClientSender{http://localhost:9411/api/v2/spans}}] WARN  z.r.i.AsyncReporter$BoundedAsyncReporter - Dropped 1 spans due to WebClientRequestException(Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411)
+org.springframework.web.reactive.function.client.WebClientRequestException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to POST http://localhost:9411/api/v2/spans [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:137)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:205)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.http.client.HttpClientConnect$MonoHttpConnect$ClientTransportSubscriber.onError(HttpClientConnect.java:318)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onError(DefaultPooledConnectionProvider.java:174)
+		at reactor.netty.internal.shaded.reactor.pool.AbstractPool$Borrower.fail(AbstractPool.java:479)
+		at reactor.netty.internal.shaded.reactor.pool.SimpleDequePool.lambda$drainLoop$9(SimpleDequePool.java:443)
+		at reactor.core.publisher.FluxDoOnEach$DoOnEachSubscriber.onError(FluxDoOnEach.java:186)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:205)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnectionAllocator$PooledConnectionInitializer.onError(DefaultPooledConnectionProvider.java:593)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:229)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:279)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.maybeOnError(FluxConcatMapNoPrefetch.java:327)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:212)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+		at reactor.core.publisher.SinkManyEmitterProcessor$EmitterInner.drainParent(SinkManyEmitterProcessor.java:620)
+		at reactor.core.publisher.FluxPublish$PubSubInner.request(FluxPublish.java:874)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:337)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.request(FluxContextWrite.java:136)
+		at reactor.core.publisher.Operators$DeferredSubscription.request(Operators.java:1743)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:196)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+		at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.tryFailure(TransportConnector.java:576)
+		at reactor.netty.transport.TransportConnector$MonoChannelPromise.setFailure(TransportConnector.java:522)
+		at reactor.netty.transport.TransportConnector.lambda$doConnect$7(TransportConnector.java:261)
+		at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+		at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+		at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+		at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+		at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+		at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:326)
+		at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:342)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104)
+		at reactor.core.publisher.Mono.block(Mono.java:1779)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinWebClientSender.postSpans(ZipkinWebClientSender.java:58)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69)
+		at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41)
+		at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123)
+		at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266)
+		at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:9411
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:973)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:784)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-31 22:40:01.207 [http-nio-8092-exec-6] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 22:40:01.220 [http-nio-8092-exec-5] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 22:40:53.908 [http-nio-8092-exec-6] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 22:40:53.917 [http-nio-8092-exec-5] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 22:41:23.238 [http-nio-8092-exec-2] INFO  c.t.m.controller.PatientController - Patient logs
+2026-03-31 22:41:23.248 [http-nio-8092-exec-3] INFO  c.t.m.controller.PatientController - Patient logs

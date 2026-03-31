@@ -22,6 +22,7 @@ public enum Specialization {
 	PREVENTIVE_MEDICINE("Preventive medicine");
 	
   private final String description;
+  
 	
 	@Override
 	public String toString() {

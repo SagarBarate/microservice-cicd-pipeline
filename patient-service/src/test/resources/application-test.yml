@@ -7,7 +7,11 @@ spring:
     username: sa
     password: password
     driver-class-name: org.h2.Driver
+  sql:
+    init:
+      mode: never
   jpa:
+    defer-datasource-initialization: false
     hibernate:
       ddl-auto: create-drop
       globally_quoted_identifiers: true
@@ -17,6 +21,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
+        default_schema: PUBLIC
   cloud:
     config:
       enabled: false

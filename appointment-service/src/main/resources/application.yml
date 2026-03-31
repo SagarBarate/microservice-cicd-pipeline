@@ -1,18 +1,16 @@
 server:
-  port: 8092
+  port: 8093
 
 spring:
   application:
-    name: patient-service
+    name: appointment-service
   config:
     import: optional:configserver:http://localhost:8888
   datasource:
-    url: jdbc:postgresql://localhost:15432/postgres_docker_db?currentSchema=hsm_patient
+    url: jdbc:postgresql://localhost:15432/postgres_docker_db?currentSchema=hsm-appointment
     username: sagarbarateA00335597
     password: sagar@123
     driver-class-name: org.postgresql.Driver
-    hikari:
-      connection-init-sql: CREATE SCHEMA IF NOT EXISTS hsm_patient
   jpa:
     hibernate:
       ddl-auto: update
@@ -23,12 +21,6 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-        default_schema: hsm_patient
-
-management:
-  tracing:
-    export:
-      enabled: false
 
 eureka:
   client:
